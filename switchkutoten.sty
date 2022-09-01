@@ -1,0 +1,371 @@
+\ProvidesPackage{switchkutoten}[2022/09/02]
+\RequirePackage{ucharcat}
+\RequirePackage{newunicodechar}
+\kcatcode"3000=15
+\kcatcode"FF00=15
+\newunicodechar{　}{\Ucharcat 12288 18\afterchar}
+\newunicodechar{、}{\Ucharcat 12290 18\afterchar}
+\newunicodechar{。}{\Ucharcat 12290 18\afterchar}
+\newunicodechar{〃}{\Ucharcat 12291 18\afterchar}
+\newunicodechar{〄}{\Ucharcat 12292 18\afterchar}
+\newunicodechar{々}{\Ucharcat 12293 18\afterchar}
+\newunicodechar{〆}{\Ucharcat 12294 18\afterchar}
+\newunicodechar{〇}{\Ucharcat 12295 18\afterchar}
+\newunicodechar{〈}{\Ucharcat 12296 18\afterchar}
+\newunicodechar{〉}{\Ucharcat 12297 18\afterchar}
+\newunicodechar{《}{\Ucharcat 12298 18\afterchar}
+\newunicodechar{》}{\Ucharcat 12299 18\afterchar}
+\newunicodechar{「}{\Ucharcat 12300 18\afterchar}
+\newunicodechar{」}{\Ucharcat 12301 18\afterchar}
+\newunicodechar{『}{\Ucharcat 12302 18\afterchar}
+\newunicodechar{』}{\Ucharcat 12303 18\afterchar}
+\newunicodechar{【}{\Ucharcat 12304 18\afterchar}
+\newunicodechar{】}{\Ucharcat 12305 18\afterchar}
+\newunicodechar{〒}{\Ucharcat 12306 18\afterchar}
+\newunicodechar{〓}{\Ucharcat 12307 18\afterchar}
+\newunicodechar{〔}{\Ucharcat 12308 18\afterchar}
+\newunicodechar{〕}{\Ucharcat 12309 18\afterchar}
+\newunicodechar{〖}{\Ucharcat 12310 18\afterchar}
+\newunicodechar{〗}{\Ucharcat 12311 18\afterchar}
+\newunicodechar{〘}{\Ucharcat 12312 18\afterchar}
+\newunicodechar{〙}{\Ucharcat 12313 18\afterchar}
+\newunicodechar{〚}{\Ucharcat 12314 18\afterchar}
+\newunicodechar{〛}{\Ucharcat 12315 18\afterchar}
+\newunicodechar{〜}{\Ucharcat 12316 18\afterchar}
+\newunicodechar{〝}{\Ucharcat 12317 18\afterchar}
+\newunicodechar{〞}{\Ucharcat 12318 18\afterchar}
+\newunicodechar{〟}{\Ucharcat 12319 18\afterchar}
+\newunicodechar{〠}{\Ucharcat 12320 18\afterchar}
+\newunicodechar{〡}{\Ucharcat 12321 18\afterchar}
+\newunicodechar{〢}{\Ucharcat 12322 18\afterchar}
+\newunicodechar{〣}{\Ucharcat 12323 18\afterchar}
+\newunicodechar{〤}{\Ucharcat 12324 18\afterchar}
+\newunicodechar{〥}{\Ucharcat 12325 18\afterchar}
+\newunicodechar{〦}{\Ucharcat 12326 18\afterchar}
+\newunicodechar{〧}{\Ucharcat 12327 18\afterchar}
+\newunicodechar{〨}{\Ucharcat 12328 18\afterchar}
+\newunicodechar{〩}{\Ucharcat 12329 18\afterchar}
+\newunicodechar{〪}{\Ucharcat 12330 18\afterchar}
+\newunicodechar{〫}{\Ucharcat 12331 18\afterchar}
+\newunicodechar{〬}{\Ucharcat 12332 18\afterchar}
+\newunicodechar{〭}{\Ucharcat 12333 18\afterchar}
+\newunicodechar{〮}{\Ucharcat 12334 18\afterchar}
+\newunicodechar{〯}{\Ucharcat 12335 18\afterchar}
+\newunicodechar{〰}{\Ucharcat 12336 18\afterchar}
+\newunicodechar{〱}{\Ucharcat 12337 18\afterchar}
+\newunicodechar{〲}{\Ucharcat 12338 18\afterchar}
+\newunicodechar{〳}{\Ucharcat 12339 18\afterchar}
+\newunicodechar{〴}{\Ucharcat 12340 18\afterchar}
+\newunicodechar{〵}{\Ucharcat 12341 18\afterchar}
+\newunicodechar{〶}{\Ucharcat 12342 18\afterchar}
+\newunicodechar{〷}{\Ucharcat 12343 18\afterchar}
+\newunicodechar{〸}{\Ucharcat 12344 18\afterchar}
+\newunicodechar{〹}{\Ucharcat 12345 18\afterchar}
+\newunicodechar{〺}{\Ucharcat 12346 18\afterchar}
+\newunicodechar{〻}{\Ucharcat 12347 18\afterchar}
+\newunicodechar{〼}{\Ucharcat 12348 18\afterchar}
+\newunicodechar{〽}{\Ucharcat 12349 18\afterchar}
+\newunicodechar{〾}{\Ucharcat 12350 18\afterchar}
+\newunicodechar{〿}{\Ucharcat 12351 18\afterchar}
+
+
+\newunicodechar{＀}{\Ucharcat 65280 18\afterchar}
+\newunicodechar{！}{\Ucharcat 65281 18\afterchar}
+\newunicodechar{＂}{\Ucharcat 65282 18\afterchar}
+\newunicodechar{＃}{\Ucharcat 65283 18\afterchar}
+\newunicodechar{＄}{\Ucharcat 65284 18\afterchar}
+\newunicodechar{％}{\Ucharcat 65285 18\afterchar}
+\newunicodechar{＆}{\Ucharcat 65286 18\afterchar}
+\newunicodechar{＇}{\Ucharcat 65287 18\afterchar}
+\newunicodechar{（}{\Ucharcat 65288 18\afterchar}
+\newunicodechar{）}{\Ucharcat 65289 18\afterchar}
+\newunicodechar{＊}{\Ucharcat 65290 18\afterchar}
+\newunicodechar{＋}{\Ucharcat 65291 18\afterchar}
+\newunicodechar{，}{\Ucharcat 65292 18\afterchar}
+\newunicodechar{－}{\Ucharcat 65293 18\afterchar}
+\newunicodechar{．}{\Ucharcat 65294 18\afterchar}
+\newunicodechar{／}{\Ucharcat 65295 18\afterchar}
+% \newunicodechar{０}{\Ucharcat 65296 18\afterchar}
+% \newunicodechar{１}{\Ucharcat 65297 18\afterchar}
+% \newunicodechar{２}{\Ucharcat 65298 18\afterchar}
+% \newunicodechar{３}{\Ucharcat 65299 18\afterchar}
+% \newunicodechar{４}{\Ucharcat 65300 18\afterchar}
+% \newunicodechar{５}{\Ucharcat 65301 18\afterchar}
+% \newunicodechar{６}{\Ucharcat 65302 18\afterchar}
+% \newunicodechar{７}{\Ucharcat 65303 18\afterchar}
+% \newunicodechar{８}{\Ucharcat 65304 18\afterchar}
+% \newunicodechar{９}{\Ucharcat 65305 18\afterchar}
+\newunicodechar{：}{\Ucharcat 65306 18\afterchar}
+\newunicodechar{；}{\Ucharcat 65307 18\afterchar}
+\newunicodechar{＜}{\Ucharcat 65308 18\afterchar}
+\newunicodechar{＝}{\Ucharcat 65309 18\afterchar}
+\newunicodechar{＞}{\Ucharcat 65310 18\afterchar}
+\newunicodechar{？}{\Ucharcat 65311 18\afterchar}
+% \newunicodechar{＠}{\Ucharcat 65312 18\afterchar}
+% \newunicodechar{Ａ}{\Ucharcat 65313 18\afterchar}
+% \newunicodechar{Ｂ}{\Ucharcat 65314 18\afterchar}
+% \newunicodechar{Ｃ}{\Ucharcat 65315 18\afterchar}
+% \newunicodechar{Ｄ}{\Ucharcat 65316 18\afterchar}
+% \newunicodechar{Ｅ}{\Ucharcat 65317 18\afterchar}
+% \newunicodechar{Ｆ}{\Ucharcat 65318 18\afterchar}
+% \newunicodechar{Ｇ}{\Ucharcat 65319 18\afterchar}
+% \newunicodechar{Ｈ}{\Ucharcat 65320 18\afterchar}
+% \newunicodechar{Ｉ}{\Ucharcat 65321 18\afterchar}
+% \newunicodechar{Ｊ}{\Ucharcat 65322 18\afterchar}
+% \newunicodechar{Ｋ}{\Ucharcat 65323 18\afterchar}
+% \newunicodechar{Ｌ}{\Ucharcat 65324 18\afterchar}
+% \newunicodechar{Ｍ}{\Ucharcat 65325 18\afterchar}
+% \newunicodechar{Ｎ}{\Ucharcat 65326 18\afterchar}
+% \newunicodechar{Ｏ}{\Ucharcat 65327 18\afterchar}
+% \newunicodechar{Ｐ}{\Ucharcat 65328 18\afterchar}
+% \newunicodechar{Ｑ}{\Ucharcat 65329 18\afterchar}
+% \newunicodechar{Ｒ}{\Ucharcat 65330 18\afterchar}
+% \newunicodechar{Ｓ}{\Ucharcat 65331 18\afterchar}
+% \newunicodechar{Ｔ}{\Ucharcat 65332 18\afterchar}
+% \newunicodechar{Ｕ}{\Ucharcat 65333 18\afterchar}
+% \newunicodechar{Ｖ}{\Ucharcat 65334 18\afterchar}
+% \newunicodechar{Ｗ}{\Ucharcat 65335 18\afterchar}
+% \newunicodechar{Ｘ}{\Ucharcat 65336 18\afterchar}
+% \newunicodechar{Ｙ}{\Ucharcat 65337 18\afterchar}
+% \newunicodechar{Ｚ}{\Ucharcat 65338 18\afterchar}
+\newunicodechar{［}{\Ucharcat 65339 18\afterchar}
+\newunicodechar{＼}{\Ucharcat 65340 18\afterchar}
+\newunicodechar{］}{\Ucharcat 65341 18\afterchar}
+\newunicodechar{＾}{\Ucharcat 65342 18\afterchar}
+\newunicodechar{＿}{\Ucharcat 65343 18\afterchar}
+\newunicodechar{｀}{\Ucharcat 65344 18\afterchar}
+% \newunicodechar{ａ}{\Ucharcat 65345 18\afterchar}
+% \newunicodechar{ｂ}{\Ucharcat 65346 18\afterchar}
+% \newunicodechar{ｃ}{\Ucharcat 65347 18\afterchar}
+% \newunicodechar{ｄ}{\Ucharcat 65348 18\afterchar}
+% \newunicodechar{ｅ}{\Ucharcat 65349 18\afterchar}
+% \newunicodechar{ｆ}{\Ucharcat 65350 18\afterchar}
+% \newunicodechar{ｇ}{\Ucharcat 65351 18\afterchar}
+% \newunicodechar{ｈ}{\Ucharcat 65352 18\afterchar}
+% \newunicodechar{ｉ}{\Ucharcat 65353 18\afterchar}
+% \newunicodechar{ｊ}{\Ucharcat 65354 18\afterchar}
+% \newunicodechar{ｋ}{\Ucharcat 65355 18\afterchar}
+% \newunicodechar{ｌ}{\Ucharcat 65356 18\afterchar}
+% \newunicodechar{ｍ}{\Ucharcat 65357 18\afterchar}
+% \newunicodechar{ｎ}{\Ucharcat 65358 18\afterchar}
+% \newunicodechar{ｏ}{\Ucharcat 65359 18\afterchar}
+% \newunicodechar{ｐ}{\Ucharcat 65360 18\afterchar}
+% \newunicodechar{ｑ}{\Ucharcat 65361 18\afterchar}
+% \newunicodechar{ｒ}{\Ucharcat 65362 18\afterchar}
+% \newunicodechar{ｓ}{\Ucharcat 65363 18\afterchar}
+% \newunicodechar{ｔ}{\Ucharcat 65364 18\afterchar}
+% \newunicodechar{ｕ}{\Ucharcat 65365 18\afterchar}
+% \newunicodechar{ｖ}{\Ucharcat 65366 18\afterchar}
+% \newunicodechar{ｗ}{\Ucharcat 65367 18\afterchar}
+% \newunicodechar{ｘ}{\Ucharcat 65368 18\afterchar}
+% \newunicodechar{ｙ}{\Ucharcat 65369 18\afterchar}
+% \newunicodechar{ｚ}{\Ucharcat 65370 18\afterchar}
+\newunicodechar{｛}{\Ucharcat 65371 18\afterchar}
+\newunicodechar{｜}{\Ucharcat 65372 18\afterchar}
+\newunicodechar{｝}{\Ucharcat 65373 18\afterchar}
+\newunicodechar{～}{\Ucharcat 65374 18\afterchar}
+\newunicodechar{｟}{\Ucharcat 65375 18\afterchar}
+\newunicodechar{｠}{\Ucharcat 65376 18\afterchar}
+\newunicodechar{｡}{\Ucharcat 65377 18\afterchar}
+\newunicodechar{｢}{\Ucharcat 65378 18\afterchar}
+\newunicodechar{｣}{\Ucharcat 65379 18\afterchar}
+\newunicodechar{､}{\Ucharcat 65380 18\afterchar}
+\newunicodechar{･}{\Ucharcat 65381 18\afterchar}
+% \newunicodechar{ｦ}{\Ucharcat 65382 18\afterchar}
+% \newunicodechar{ｧ}{\Ucharcat 65383 18\afterchar}
+% \newunicodechar{ｨ}{\Ucharcat 65384 18\afterchar}
+% \newunicodechar{ｩ}{\Ucharcat 65385 18\afterchar}
+% \newunicodechar{ｪ}{\Ucharcat 65386 18\afterchar}
+% \newunicodechar{ｫ}{\Ucharcat 65387 18\afterchar}
+% \newunicodechar{ｬ}{\Ucharcat 65388 18\afterchar}
+% \newunicodechar{ｭ}{\Ucharcat 65389 18\afterchar}
+% \newunicodechar{ｮ}{\Ucharcat 65390 18\afterchar}
+% \newunicodechar{ｯ}{\Ucharcat 65391 18\afterchar}
+% \newunicodechar{ｰ}{\Ucharcat 65392 18\afterchar}
+% \newunicodechar{ｱ}{\Ucharcat 65393 18\afterchar}
+% \newunicodechar{ｲ}{\Ucharcat 65394 18\afterchar}
+% \newunicodechar{ｳ}{\Ucharcat 65395 18\afterchar}
+% \newunicodechar{ｴ}{\Ucharcat 65396 18\afterchar}
+% \newunicodechar{ｵ}{\Ucharcat 65397 18\afterchar}
+% \newunicodechar{ｶ}{\Ucharcat 65398 18\afterchar}
+% \newunicodechar{ｷ}{\Ucharcat 65399 18\afterchar}
+% \newunicodechar{ｸ}{\Ucharcat 65400 18\afterchar}
+% \newunicodechar{ｹ}{\Ucharcat 65401 18\afterchar}
+% \newunicodechar{ｺ}{\Ucharcat 65402 18\afterchar}
+% \newunicodechar{ｻ}{\Ucharcat 65403 18\afterchar}
+% \newunicodechar{ｼ}{\Ucharcat 65404 18\afterchar}
+% \newunicodechar{ｽ}{\Ucharcat 65405 18\afterchar}
+% \newunicodechar{ｾ}{\Ucharcat 65406 18\afterchar}
+% \newunicodechar{ｿ}{\Ucharcat 65407 18\afterchar}
+% \newunicodechar{ﾀ}{\Ucharcat 65408 18\afterchar}
+% \newunicodechar{ﾁ}{\Ucharcat 65409 18\afterchar}
+% \newunicodechar{ﾂ}{\Ucharcat 65410 18\afterchar}
+% \newunicodechar{ﾃ}{\Ucharcat 65411 18\afterchar}
+% \newunicodechar{ﾄ}{\Ucharcat 65412 18\afterchar}
+% \newunicodechar{ﾅ}{\Ucharcat 65413 18\afterchar}
+% \newunicodechar{ﾆ}{\Ucharcat 65414 18\afterchar}
+% \newunicodechar{ﾇ}{\Ucharcat 65415 18\afterchar}
+% \newunicodechar{ﾈ}{\Ucharcat 65416 18\afterchar}
+% \newunicodechar{ﾉ}{\Ucharcat 65417 18\afterchar}
+% \newunicodechar{ﾊ}{\Ucharcat 65418 18\afterchar}
+% \newunicodechar{ﾋ}{\Ucharcat 65419 18\afterchar}
+% \newunicodechar{ﾌ}{\Ucharcat 65420 18\afterchar}
+% \newunicodechar{ﾍ}{\Ucharcat 65421 18\afterchar}
+% \newunicodechar{ﾎ}{\Ucharcat 65422 18\afterchar}
+% \newunicodechar{ﾏ}{\Ucharcat 65423 18\afterchar}
+% \newunicodechar{ﾐ}{\Ucharcat 65424 18\afterchar}
+% \newunicodechar{ﾑ}{\Ucharcat 65425 18\afterchar}
+% \newunicodechar{ﾒ}{\Ucharcat 65426 18\afterchar}
+% \newunicodechar{ﾓ}{\Ucharcat 65427 18\afterchar}
+% \newunicodechar{ﾔ}{\Ucharcat 65428 18\afterchar}
+% \newunicodechar{ﾕ}{\Ucharcat 65429 18\afterchar}
+% \newunicodechar{ﾖ}{\Ucharcat 65430 18\afterchar}
+% \newunicodechar{ﾗ}{\Ucharcat 65431 18\afterchar}
+% \newunicodechar{ﾘ}{\Ucharcat 65432 18\afterchar}
+% \newunicodechar{ﾙ}{\Ucharcat 65433 18\afterchar}
+% \newunicodechar{ﾚ}{\Ucharcat 65434 18\afterchar}
+% \newunicodechar{ﾛ}{\Ucharcat 65435 18\afterchar}
+% \newunicodechar{ﾜ}{\Ucharcat 65436 18\afterchar}
+% \newunicodechar{ﾝ}{\Ucharcat 65437 18\afterchar}
+\newunicodechar{ﾞ}{\Ucharcat 65438 18\afterchar}
+\newunicodechar{ﾟ}{\Ucharcat 65439 18\afterchar}
+\newunicodechar{ﾠ}{\Ucharcat 65440 18\afterchar}
+\newunicodechar{ﾡ}{\Ucharcat 65441 18\afterchar}
+\newunicodechar{ﾢ}{\Ucharcat 65442 18\afterchar}
+\newunicodechar{ﾣ}{\Ucharcat 65443 18\afterchar}
+\newunicodechar{ﾤ}{\Ucharcat 65444 18\afterchar}
+\newunicodechar{ﾥ}{\Ucharcat 65445 18\afterchar}
+\newunicodechar{ﾦ}{\Ucharcat 65446 18\afterchar}
+\newunicodechar{ﾧ}{\Ucharcat 65447 18\afterchar}
+\newunicodechar{ﾨ}{\Ucharcat 65448 18\afterchar}
+\newunicodechar{ﾩ}{\Ucharcat 65449 18\afterchar}
+\newunicodechar{ﾪ}{\Ucharcat 65450 18\afterchar}
+\newunicodechar{ﾫ}{\Ucharcat 65451 18\afterchar}
+\newunicodechar{ﾬ}{\Ucharcat 65452 18\afterchar}
+\newunicodechar{ﾭ}{\Ucharcat 65453 18\afterchar}
+\newunicodechar{ﾮ}{\Ucharcat 65454 18\afterchar}
+\newunicodechar{ﾯ}{\Ucharcat 65455 18\afterchar}
+\newunicodechar{ﾰ}{\Ucharcat 65456 18\afterchar}
+\newunicodechar{ﾱ}{\Ucharcat 65457 18\afterchar}
+\newunicodechar{ﾲ}{\Ucharcat 65458 18\afterchar}
+\newunicodechar{ﾳ}{\Ucharcat 65459 18\afterchar}
+\newunicodechar{ﾴ}{\Ucharcat 65460 18\afterchar}
+\newunicodechar{ﾵ}{\Ucharcat 65461 18\afterchar}
+\newunicodechar{ﾶ}{\Ucharcat 65462 18\afterchar}
+\newunicodechar{ﾷ}{\Ucharcat 65463 18\afterchar}
+\newunicodechar{ﾸ}{\Ucharcat 65464 18\afterchar}
+\newunicodechar{ﾹ}{\Ucharcat 65465 18\afterchar}
+\newunicodechar{ﾺ}{\Ucharcat 65466 18\afterchar}
+\newunicodechar{ﾻ}{\Ucharcat 65467 18\afterchar}
+\newunicodechar{ﾼ}{\Ucharcat 65468 18\afterchar}
+\newunicodechar{ﾽ}{\Ucharcat 65469 18\afterchar}
+\newunicodechar{ﾾ}{\Ucharcat 65470 18\afterchar}
+\newunicodechar{﾿}{\Ucharcat 65471 18\afterchar}
+\newunicodechar{￀}{\Ucharcat 65472 18\afterchar}
+\newunicodechar{￁}{\Ucharcat 65473 18\afterchar}
+\newunicodechar{ￂ}{\Ucharcat 65474 18\afterchar}
+\newunicodechar{ￃ}{\Ucharcat 65475 18\afterchar}
+\newunicodechar{ￄ}{\Ucharcat 65476 18\afterchar}
+\newunicodechar{ￅ}{\Ucharcat 65477 18\afterchar}
+\newunicodechar{ￆ}{\Ucharcat 65478 18\afterchar}
+\newunicodechar{ￇ}{\Ucharcat 65479 18\afterchar}
+\newunicodechar{￈}{\Ucharcat 65480 18\afterchar}
+\newunicodechar{￉}{\Ucharcat 65481 18\afterchar}
+\newunicodechar{ￊ}{\Ucharcat 65482 18\afterchar}
+\newunicodechar{ￋ}{\Ucharcat 65483 18\afterchar}
+\newunicodechar{ￌ}{\Ucharcat 65484 18\afterchar}
+\newunicodechar{ￍ}{\Ucharcat 65485 18\afterchar}
+\newunicodechar{ￎ}{\Ucharcat 65486 18\afterchar}
+\newunicodechar{ￏ}{\Ucharcat 65487 18\afterchar}
+\newunicodechar{￐}{\Ucharcat 65488 18\afterchar}
+\newunicodechar{￑}{\Ucharcat 65489 18\afterchar}
+\newunicodechar{ￒ}{\Ucharcat 65490 18\afterchar}
+\newunicodechar{ￓ}{\Ucharcat 65491 18\afterchar}
+\newunicodechar{ￔ}{\Ucharcat 65492 18\afterchar}
+\newunicodechar{ￕ}{\Ucharcat 65493 18\afterchar}
+\newunicodechar{ￖ}{\Ucharcat 65494 18\afterchar}
+\newunicodechar{ￗ}{\Ucharcat 65495 18\afterchar}
+\newunicodechar{￘}{\Ucharcat 65496 18\afterchar}
+\newunicodechar{￙}{\Ucharcat 65497 18\afterchar}
+\newunicodechar{ￚ}{\Ucharcat 65498 18\afterchar}
+\newunicodechar{ￛ}{\Ucharcat 65499 18\afterchar}
+\newunicodechar{ￜ}{\Ucharcat 65500 18\afterchar}
+\newunicodechar{￝}{\Ucharcat 65501 18\afterchar}
+\newunicodechar{￞}{\Ucharcat 65502 18\afterchar}
+\newunicodechar{￟}{\Ucharcat 65503 18\afterchar}
+\newunicodechar{￠}{\Ucharcat 65504 18\afterchar}
+\newunicodechar{￡}{\Ucharcat 65505 18\afterchar}
+\newunicodechar{￢}{\Ucharcat 65506 18\afterchar}
+\newunicodechar{￣}{\Ucharcat 65507 18\afterchar}
+\newunicodechar{￤}{\Ucharcat 65508 18\afterchar}
+\newunicodechar{￥}{\Ucharcat 65509 18\afterchar}
+\newunicodechar{￦}{\Ucharcat 65510 18\afterchar}
+\newunicodechar{￧}{\Ucharcat 65511 18\afterchar}
+\newunicodechar{￨}{\Ucharcat 65512 18\afterchar}
+\newunicodechar{￩}{\Ucharcat 65513 18\afterchar}
+\newunicodechar{￪}{\Ucharcat 65514 18\afterchar}
+\newunicodechar{￫}{\Ucharcat 65515 18\afterchar}
+\newunicodechar{￬}{\Ucharcat 65516 18\afterchar}
+\newunicodechar{￭}{\Ucharcat 65517 18\afterchar}
+\newunicodechar{￮}{\Ucharcat 65518 18\afterchar}
+\newunicodechar{￯}{\Ucharcat 65519 18\afterchar}
+% \newunicodechar{￰}{\Ucharcat 65520 18\afterchar}
+% \newunicodechar{￱}{\Ucharcat 65521 18\afterchar}
+% \newunicodechar{￲}{\Ucharcat 65522 18\afterchar}
+% \newunicodechar{￳}{\Ucharcat 65523 18\afterchar}
+% \newunicodechar{￴}{\Ucharcat 65524 18\afterchar}
+% \newunicodechar{￵}{\Ucharcat 65525 18\afterchar}
+% \newunicodechar{￶}{\Ucharcat 65526 18\afterchar}
+% \newunicodechar{￷}{\Ucharcat 65527 18\afterchar}
+% \newunicodechar{￸}{\Ucharcat 65528 18\afterchar}
+% \newunicodechar{￹}{\Ucharcat 65529 18\afterchar}
+% \newunicodechar{￺}{\Ucharcat 65530 18\afterchar}
+% \newunicodechar{￻}{\Ucharcat 65531 18\afterchar}
+% \newunicodechar{￼}{\Ucharcat 65532 18\afterchar}
+% \newunicodechar{�}{\Ucharcat 65533 18\afterchar}
+% \newunicodechar{￾}{\Ucharcat 65534 18\afterchar}
+% \newunicodechar{￿}{\Ucharcat 65535 18\afterchar}
+
+
+%句読点のオプション
+\DeclareOption{cp}{
+\newunicodechar{、}{\Ucharcat 65292 18\afterchar}
+\newunicodechar{。}{\Ucharcat 65294 18\afterchar}
+\newunicodechar{，}{\Ucharcat 65292 18\afterchar}
+\newunicodechar{．}{\Ucharcat 65294 18\afterchar}
+}
+\DeclareOption{cmaru}{
+\newunicodechar{、}{\Ucharcat 65292 18\afterchar}
+\newunicodechar{。}{\Ucharcat 12290 18\afterchar}
+\newunicodechar{，}{\Ucharcat 65292 18\afterchar}
+\newunicodechar{．}{\Ucharcat 12290 18\afterchar}
+}
+\DeclareOption{tenmaru}{
+\newunicodechar{、}{\Ucharcat 12289 18\afterchar}
+\newunicodechar{。}{\Ucharcat 12290 18\afterchar}
+\newunicodechar{，}{\Ucharcat 12289 18\afterchar}
+\newunicodechar{．}{\Ucharcat 12290 18\afterchar}
+}
+\DeclareOption{tenp}{
+\newunicodechar{、}{\Ucharcat 12289 18\afterchar}
+\newunicodechar{。}{\Ucharcat 65294 18\afterchar}
+\newunicodechar{，}{\Ucharcat 12289 18\afterchar}
+\newunicodechar{．}{\Ucharcat 65294 18\afterchar}
+}
+\DeclareOption{nothing}{
+\newunicodechar{、}{\Ucharcat 12289 18\afterchar}
+\newunicodechar{。}{\Ucharcat 12290 18\afterchar}
+\newunicodechar{，}{\Ucharcat 65292 18\afterchar}
+\newunicodechar{．}{\Ucharcat 65294 18\afterchar}
+}
+\DeclareOption{empty}{
+\def\afterchar{}
+}
+\DeclareOption{forcezenkaku}{
+\def\afterchar{\ignorespaces}
+}
+\DeclareOption{space}{
+\def\afterchar{ }
+}
+\ExecuteOptions{nothing,empty}
+\ProcessOptions\relax
